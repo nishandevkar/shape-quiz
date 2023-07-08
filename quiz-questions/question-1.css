@@ -1,0 +1,54 @@
+body { /* can also be whatever container */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+.shapes-container{
+    border: solid black 2px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container1,.container2,.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+}
+#shape1{
+    background-color: blue;
+    border: 1rem;
+    width: 4rem;
+    height: 4rem;
+}
+#shape2{
+    background-color: red;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+#shape3{
+        width: 0; 
+        height: 0; 
+        border-left: 3rem solid transparent;
+        border-right: 3rem solid transparent;
+        
+        border-bottom: 4rem solid green;
+      }
+
+@media (max-width: 600px) {
+.shapes-container {
+    flex-direction: column;
+    align-items: center;
+}
+}
